@@ -1,3 +1,5 @@
+# https://travis-ci.org/Adejair/jgs-boilerplate/
+
 language: node_js
 rvm:
   - 2.2
