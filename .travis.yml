@@ -1,0 +1,18 @@
+language: node_js
+rvm:
+  - 2.2
+node_js:
+  - "5.6.0"
+before_install:
+  - npm install
+install:
+  - rvm install ruby-2.2.0
+  - rvm use 2.2
+  - gem install jekyll
+
+script:
+  - bundle install
+  - bundle exec jekyll build
+env:
+  global:
+    - NOKOGIRI_USE_SYSTEM_LIBRARIES=true

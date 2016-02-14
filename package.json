@@ -1,0 +1,23 @@
+{
+  "name": "jgs-boilerplate",
+  "version": "1.0.0",
+  "description": "Boilerplate to create project with jekyll, gulp and stylus :)",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "gulp",
+    "jekyll",
+    "stylus"
+  ],
+  "author": "Adejair Júnior",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.11.1",
+    "gulp": "^3.9.1",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-stylus": "^2.3.0",
+    "gulp-uglify": "^1.5.2"
+  }
+}
