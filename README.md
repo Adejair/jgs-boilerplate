@@ -17,9 +17,7 @@ How to use use ?
 
 ```
 git clone https://github.com/Adejair/jgs-boilerplate && cd jgs-boilerplate
-
 [sudo] npm install
-
 gulp
 ```
 Go to code now !!
