@@ -1,7 +1,5 @@
 JGS - Boilerplate
 =============           
-![](https://travis-ci.org/Adejair/jgs-boilerplate.svg)
-
 <img src="http://i.imgur.com/5hXAO8E.png" align="right" height="150">   
 Boilerplate with Jekyll, GulpJs and Stylus.
 
