@@ -44,6 +44,7 @@ A structure and definitions of JGS.
 Some details on the structure:
 
 `_stylus` Write your code with stylus pre-processor here.
+
 `css` Code converted from stylus to css, if you prefer write with css here.
 
 `images` - All images to be minified.
