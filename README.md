@@ -14,13 +14,16 @@ How to use use ?
 ----------
 
 ```
-git clone https://github.com/Adejair/jgs-boilerplate && cd jgs-boilerplate
-[sudo] npm install
-gulp
+git clone https://github.com/Adejair/jgs-boilerplate my-awesome-jekyll
+cd my-awesome-jekyll
+
+npm install gulp -g
+npm install
+
+gem install jekyll (Necessary ruby >= 2.0.0)
+gulp 
 ```
 Go to code now !!
-
-*sudo* only for linux users.
 
 Structure of JGS
 ----------
@@ -30,14 +33,9 @@ A structure and definitions of JGS.
 | _layouts
 | _posts
 | _site (builded site to production)
-| assets
- \ -- images
- \ -- js
+| _stylus
 | css
-| src
- \ -- images
- \ -- js
- \ -- stylus
+| images
 - _config.yml
 -feed.xml
 -gulpfile.js
@@ -45,13 +43,11 @@ A structure and definitions of JGS.
 ```
 Some details on the structure:
 
-`assets` - These folder contains files javascript and images (minify) to use in production, on compile jekyll these folder is moved to \_site.
+`_stylus` Write your code with stylus pre-processor here.
+`css` Code converted from stylus to css, if you prefer write with css here.
 
-`src` - Write all javascript, put all images and write all stylus syntax *here*.
+`images` - All images to be minified.
 
-** Observation **
-
-In _gulpfile.js_ the build of javascript and stylus is provid only one folder search (\*.{styl, js}) if you have a subtree add `{PATH_{styl,js}}/**/*.{styl,js}` in gulpfile config :wink:
 
 Tasks Gulp
 ----------
@@ -62,15 +58,13 @@ Tasks of _gulp_:
 
 `gulp stylus` - Convert stylus syntax to css.
 
-`gulp jekyll-build` - Build jekyll
+`gulp build-jekyll` - Build jekyll
 
-`gulp jekyll-reload` - Build jekyll and reload page
+`gulp rebuild-jekyll` - RE-Build jekyll
 
 `gulp browser-sync` - Create local server to sync browser with all devies connected.
 
-`gulp minimage` - Minify image
-
-`gulp minjs` -  Minify JS
+`gulp imagemin` - Minify image
 
 Users Ideal
 ----------
